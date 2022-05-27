@@ -15,7 +15,7 @@ public class CarServiceImpl {
         list.add(new Car("Opel", "White", 1004));
         list.add(new Car("BMV", "Grey", 1005));
 
-        if (count < 1) {
+        if (count==null || count < 1) {
             return list;
         } else {
             return list.stream().limit(count).toList();
